@@ -19,17 +19,16 @@ export default function ProductList({ $target, initialState }) {
         .map(
           (product) =>
             `
-          <li>
+          <li class="Product">
             <img src="${product.imageUrl}">
             <div class="Product__info">
               <div>${product.name}</div>
-              <div>${product.price}</div>
+              <div>${product.price}~</div>
             </div>
           </li>
       `,
         )
-        .join('')}
-    `
+        .join('')}`
   }
 
   this.render()

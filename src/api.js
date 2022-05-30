@@ -1,5 +1,5 @@
 const API_END_POINT =
-  'https://uikt6pohhh.execute-api.ap-northeast-2.amazonaws.com/dev/products'
+  'https://uikt6pohhh.execute-api.ap-northeast-2.amazonaws.com/dev'
 
 export const request = async (url, options = {}) => {
   try {
