@@ -1,6 +1,7 @@
 import CartPage from './CartPage.js'
 import ProductDetailPage from './ProductDetailPage.js'
 import ProductListPage from './ProductListPage.js'
+import { init } from './router.js'
 
 export default function App({ $target }) {
   this.route = () => {
@@ -17,6 +18,9 @@ export default function App({ $target }) {
       new CartPage({ $target }).render()
     }
   }
+  init(this.route)
 
   this.route()
+
+  window.addEventListener('popstate', this.route)
 }
